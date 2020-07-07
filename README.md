@@ -135,12 +135,6 @@ linha 127
  var ok = _validacoes.ValidacaoInicial(filme);
   ```
   
-  ## Testes
-  
-  Foi criado um projeto de testes (xUnit) para efetuar testes de cadastros e validações
-  
-  ### Nome do Projeto
-  
-  - XUnitTestProject
+ 
   
  
