@@ -24,7 +24,7 @@ namespace ApiLocadora.Controllers
 			_validacoes = validacoes;
 		}
 		
-		// GET: api/Cliente
+		// GET: api/Clientes
 		[HttpGet]
 		public IEnumerable<Cliente> GetClientes()
 		{
@@ -51,7 +51,7 @@ namespace ApiLocadora.Controllers
 			return Ok(cliente);
 		}
 		
-		// PUT: api/Cliente/5
+		// PUT: api/Clientes/5
 		[HttpPut("{id}")]
 		public async Task<IActionResult> PutCliente([FromRoute] int id, [FromBody] Cliente cliente)
 		{
@@ -86,7 +86,7 @@ namespace ApiLocadora.Controllers
 			return NoContent();
 		}
 
-		// POST: api/Cliente
+		// POST: api/Clientes
 		[HttpPost]
 		public async Task<IActionResult> PostCliente([FromBody] Cliente cliente)
 		{
@@ -106,7 +106,7 @@ namespace ApiLocadora.Controllers
 			return CreatedAtAction("GetCliente", new { id = cliente.ID }, cliente);
 		}
 
-		// DELETE: api/Cliente/5
+		// DELETE: api/Clientes/5
 		[HttpDelete("{id}")]
 		public async Task<IActionResult> DeleteCliente([FromRoute] int id)
 		{
