@@ -9,7 +9,6 @@ namespace ApiLocadora.Model
 {
 	public class Cliente
 	{
-		
 		public int ID { get; set; }
 		[MaxLength(50)]
 		public string Nome { get; set; }
