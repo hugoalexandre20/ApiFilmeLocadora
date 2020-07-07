@@ -31,7 +31,7 @@ namespace ApiLocadora.Controllers
 			return _context.Cliente;
 		}
 
-		// GET: api/Cliente/5
+		// GET: api/Clientes/5
 		[HttpGet("{id}")]
 		public async Task<IActionResult> GetCliente([FromRoute] int id)
 		{
